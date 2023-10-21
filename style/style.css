@@ -108,4 +108,7 @@ body {
     .circle {
         width: 200px;
     }
+    .card {
+        width: 320px !important;
+    }
 }
