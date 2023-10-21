@@ -107,6 +107,7 @@ body {
 @media (max-width: 800px) {
     .circle {
         width: 200px;
+        display: none;
     }
     .card {
         width: 320px !important;
