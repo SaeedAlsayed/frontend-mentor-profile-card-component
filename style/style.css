@@ -1,0 +1,111 @@
+/* Start global Rules */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.attribution {
+    font-size: 11px;
+    text-align:    center;
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    font-weight: bold;
+}
+.attribution a {
+    color: white;
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    position: relative;
+    overflow: hidden;
+}
+.circle {
+    position: absolute;
+    z-index: -50;
+}
+.top-circle {
+    left: -100px;
+    top: -600px;
+}
+.bottom-circle {
+    right: -100px;
+    bottom: -600px;
+}
+/* End global Rules */
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.container .card {
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+    text-align: center;
+}
+.container .card .cover {
+    width: 100%;
+}
+.container .card .profile-pic {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border: 5px solid white;
+    margin-top: -50px;
+}
+.container .card .profile-pic img {
+    width: 100px;
+    height: 100px;
+}
+.details {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social-data {
+    border-top: 1px solid hsl(0, 0%, 59%);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.age , .country{
+    font-weight: 500;
+    color: hsl(227, 10%, 46%);
+}
+.country {
+    margin-top: 5px;
+}
+@media (max-width: 800px) {
+    .circle {
+        width: 200px;
+    }
+}
